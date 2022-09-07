@@ -7,13 +7,12 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-app.get('/',(req,res)=>{
-    res.end('<h1>It is a bot!!!!(((((((((=</h1>')
-})
-app.listen(PORT,()=>{
-    console.log('Server has been started');
-})
-
+app.get('/', (req, res) => {
+  res.end('<h1>It is a bot!!!!(((((((((=</h1>');
+});
+app.listen(PORT, () => {
+  console.log('Server has been started');
+});
 
 const bot = new Telegraf(process.env.TOKEN);
 // const PORT = process.env.PORT || 5000;
